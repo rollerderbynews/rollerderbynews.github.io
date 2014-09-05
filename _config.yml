@@ -1,7 +1,7 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Roller Derby News
+email: rollerderbynewsitalia@gmail.com
+description: "Streaming service for your roller derby bouts. Real time score updates and rankings too! Follow your team here!"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
