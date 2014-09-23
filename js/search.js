@@ -27,7 +27,7 @@ function search() {
 
 function buildData(response) {
   var count = 0;
- 
+  var $results = $('#results');
       if (response.result.items) {
  
         var items = response.result.items;
