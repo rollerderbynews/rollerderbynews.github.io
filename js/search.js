@@ -75,5 +75,5 @@ function buildData(response) {
 }
 
 jQuery(document).ready(function ($) {
-   search();
+   // dom is ready
 });
