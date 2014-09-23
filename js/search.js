@@ -44,7 +44,7 @@ function buildData(response) {
  
             // Include the YouTube Watch URL youtu.be
             html += '<div class="col-sm-4 portfolio-item"> \
-    <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal"> \
+    <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal"> \
         <div class="caption"> \
             <div class="caption-content"> \
                 <i class="fa fa-search-plus fa-3x">nino</i> \
