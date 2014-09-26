@@ -14,7 +14,19 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <div class="container">
+    <div class="row">
+        <div class="col-md-4">Responsive video from <a href="http://www.streetart.nl/">Streetart.nl</a>
+
+        </div>
+        <div class="col-md-8">
+            <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                <iframe allowfullscreen="" src="http://www.youtube.com/embed/6NbAAmDuv_8?feature=player_detailpage"
+                frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
