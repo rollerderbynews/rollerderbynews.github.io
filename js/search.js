@@ -19,7 +19,7 @@ function search() {
   request.execute(function(response) {
   var str = JSON.stringify(response.result);
   nextPageToken = response.result.nextPageToken;
-  console.log(str);
+  //console.log(str);
   buildData(response);
     //$('#search-container').html('<pre>' + str + '</pre>');
   });
@@ -34,7 +34,6 @@ function buildData(response) {
         var html = "";
  
         items.forEach(function (item) {
- console.log('TITLE:'+item.snippet.title);
           // Check the duration of the video, 
           // full-length movies are generally longer than 1 hour
           var duration = Math.round((item.duration) / (60 * 60));
@@ -47,7 +46,7 @@ function buildData(response) {
     <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal"> \
         <div class="caption"> \
             <div class="caption-content"> \
-                <i class="fa fa-search-plus fa-3x">'+item.snippet.title+'</i> \
+                <i class="fa fa-search-plus fa-2x">'+item.snippet.title+'</i> \
             </div> \
         </div> \
         <img src="'+item.snippet.thumbnails.high.url +'" class="img-responsive" alt="{{ post.alt }}"> \
