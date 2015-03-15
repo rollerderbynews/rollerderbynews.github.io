@@ -47,7 +47,7 @@ function buildData(response) {
     <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal"> \
         <div class="caption"> \
             <div class="caption-content"> \
-                <i class="fa fa-search-plus fa-3x">nino</i> \
+                <i class="fa fa-search-plus fa-3x">'+item.title+'</i> \
             </div> \
         </div> \
         <img src="'+item.snippet.thumbnails.high.url +'" class="img-responsive" alt="{{ post.alt }}"> \
