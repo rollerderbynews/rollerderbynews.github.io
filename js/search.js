@@ -34,7 +34,7 @@ function buildData(response) {
         var html = "";
  
         items.forEach(function (item) {
- console.log(JSON.stringify(item.snippet.title));
+ console.log('TITLE:'+item.snippet.title);
           // Check the duration of the video, 
           // full-length movies are generally longer than 1 hour
           var duration = Math.round((item.duration) / (60 * 60));
