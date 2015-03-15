@@ -12,20 +12,20 @@ color:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://twitter.com/ridonato
   - title: facebook
-    url:
+    url: https://www.facebook.com/rollerderbynews
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: http://stackoverflow.com/users/664567/rdonato
   - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    url: https://bitbucket.org/rdonato
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/rdonato
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: via Monza 11
+  - line:  20030 Senago (MI)
 
 # Build settings
 markdown: kramdown
