@@ -36,6 +36,7 @@ function buildData(response) {
         items.forEach(function (item) {
           // Check the duration of the video, 
           // full-length movies are generally longer than 1 hour
+          // item.id.videoId
           var duration = Math.round((item.duration) / (60 * 60));
  var deb = JSON.stringify(item);
  console.log(deb);
@@ -70,7 +71,7 @@ html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" ta
     <div class="row"> \
         <div class="col-md-12"> \
             <div class="embed-responsive embed-responsive-16by9" style="margin: 0 auto;text-align:center;"> \
-                <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.id.videoId+'?feature=player_detailpage" \
+                <iframe allowfullscreen="" src="https://www.youtube.com/embed/fbMFy2r-Mb0" \
                 frameborder="0"></iframe> \
             </div> \
         </div> \
