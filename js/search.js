@@ -51,7 +51,40 @@ function buildData(response) {
         </div> \
         <img src="'+item.snippet.thumbnails.high.url +'" class="img-responsive" alt="'+item.snippet.description+'"> \
     </a> \
-</div>'; 
+</div>';
+html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" tabindex="-1" role="dialog" aria-hidden="true"> \
+        <div class="modal-content"> \
+            <div class="close-modal" data-dismiss="modal"> \
+                <div class="lr"> \
+                    <div class="rl"> \
+                    </div> \
+                </div> \
+            </div> \
+            <div class="container"> \
+                <div class="row"> \
+                    <div class="col-lg-8 col-lg-offset-2"> \
+                        <div class="modal-body"> \
+                            <h2>'+item.snippet.title+'</h2> \
+                            <hr class="star-primary"> \
+
+    <div class="row"> \
+
+        <div class="col-md-12"> \
+            <div class="embed-responsive embed-responsive-16by9" style="margin: 0 auto;text-align:center;"> \
+                <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.snippet.id+'?feature=player_detailpage" \
+                frameborder="0"></iframe> \
+            </div> \
+        </div> \
+    </div> \
+
+                            <p>'+item.snippet.description+'</p> \                           
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> \
+                        </div> \
+                    </div> \
+                </div> \
+            </div> \
+        </div> \
+    </div>'; 
          //   html += '<p><a href="http://youtu.be/' + item.id + '">';
  
             // Add the default video thumbnail (default quality)
