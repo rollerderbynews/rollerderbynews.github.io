@@ -37,7 +37,8 @@ function buildData(response) {
           // Check the duration of the video, 
           // full-length movies are generally longer than 1 hour
           var duration = Math.round((item.duration) / (60 * 60));
- 
+ var deb = JSON.stringify(item);
+ console.log(deb);
           // Filter out videos that aren't in the Film or Movies category
           if (true/*(duration > 0) && (item.category == "Sports" || item.category == "Education")*/) {
  
