@@ -113,8 +113,5 @@ var loadVideo = function (videoId,count) {
 
 jQuery(document).ready(function ($) {
    // dom is ready
-   $('.modal').on('show',function(){
-  //$(this).find('iframe').attr('src','http://www.google.com')
-  console.log('Loading iframe');
-});
+
 });
