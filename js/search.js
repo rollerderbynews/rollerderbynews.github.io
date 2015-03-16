@@ -107,6 +107,11 @@ modals +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" 
       }
 }
 
+$('.modal').on('shown.bs.modal',function(){
+  //$(this).find('iframe').attr('src','http://www.google.com')
+  console.log('Loading iframe');
+});
+
 jQuery(document).ready(function ($) {
    // dom is ready
 

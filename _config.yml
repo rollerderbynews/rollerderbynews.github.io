@@ -24,8 +24,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: via Monza 11
-  - line:  20030 Senago (MI)
+  - line: Da qualche parte
+  - line:  in Italia
 
 # Build settings
 markdown: kramdown
