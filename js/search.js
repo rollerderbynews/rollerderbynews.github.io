@@ -40,7 +40,7 @@ function buildData(response) {
           // item.id.videoId
           var duration = Math.round((item.duration) / (60 * 60));
  var deb = JSON.stringify(item);
- console.log(deb);
+// console.log(deb);
           // Filter out videos that aren't in the Film or Movies category
           if (true/*(duration > 0) && (item.category == "Sports" || item.category == "Education")*/) {
  
