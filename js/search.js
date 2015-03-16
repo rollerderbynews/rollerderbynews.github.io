@@ -32,6 +32,7 @@ function buildData(response) {
  
         var items = response.result.items;
         var html = "";
+        var modals ="";
  
         items.forEach(function (item) {
           // Check the duration of the video, 
@@ -54,7 +55,7 @@ function buildData(response) {
         <img src="'+item.snippet.thumbnails.high.url +'" class="img-responsive" alt="'+item.snippet.description+'"> \
     </a> \
 </div>';
-html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" tabindex="-1" role="dialog" aria-hidden="true"> \
+modals +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" tabindex="-1" role="dialog" aria-hidden="true"> \
         <div class="modal-content"> \
             <div class="close-modal" data-dismiss="modal"> \
                 <div class="lr"> \
@@ -102,9 +103,11 @@ html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" ta
       } else {
         // Display the YouTube search results
         $results.html(html);
+        $("#search-container").html(modals);
       }
 }
 
 jQuery(document).ready(function ($) {
    // dom is ready
+
 });
