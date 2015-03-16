@@ -69,7 +69,12 @@ jQuery(document).ready(function ($) {
    // dom is ready
    console.log('Countdown');
     var target_date = new Date(2015, 12, 21, 0, 0, 0);
-var current_date = new Date();
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+var current_date = new Date(yyyy,mm,dd,0,0,0);
 
 //Create the countdown object
 var count = new Countdown(target_date, current_date);
