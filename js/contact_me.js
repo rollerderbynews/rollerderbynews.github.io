@@ -65,10 +65,6 @@ $(function() {
     });
 });
 
-jQuery(document).ready(function ($) {
-   // dom is ready
-  
-});
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
     $('#success').html('');
