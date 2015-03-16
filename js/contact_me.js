@@ -75,7 +75,7 @@ jQuery(document).ready(function ($) {
     var yyyy = today.getFullYear();
     var hours = today.getHours();
     var minutes = today.getMinutes();
-    var seconds = today.geSeconds();
+    var seconds = today.getSeconds();
 var current_date = new Date(yyyy,mm,dd,hours,minutes,seconds);
 
 //Create the countdown object
