@@ -77,7 +77,7 @@ count.countdown(function(obj) {
 //Do anything you want with the obj, which contains days, hours, minutes, seconds
 //This will be called every one second as the countdown timer goes
 // console.debug(obj);
-//E.g. you might use jQuery to update the countdown
+//E.g. you might use jQuery to update the countdown ff
 $('#days').html(obj.days);
 $('#hours').html(obj.hours);
 $('#minutes').html(obj.minutes);
