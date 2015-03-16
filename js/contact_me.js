@@ -1,6 +1,6 @@
 $(function() {
 
-   
+
 
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -67,6 +67,7 @@ $(function() {
 
 jQuery(document).ready(function ($) {
    // dom is ready
+   console.log('Countdown');
     var timerId =
   countdown(
     new Date(),
