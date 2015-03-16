@@ -70,7 +70,7 @@ html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" ta
     <div class="row"> \
         <div class="col-md-12"> \
             <div class="embed-responsive embed-responsive-16by9" style="margin: 0 auto;text-align:center;"> \
-                <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.snippet.id+'?feature=player_detailpage" \
+                <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.id.videoId+'?feature=player_detailpage" \
                 frameborder="0"></iframe> \
             </div> \
         </div> \
