@@ -68,16 +68,26 @@ $(function() {
 jQuery(document).ready(function ($) {
    // dom is ready
    console.log('Countdown');
-    var timerId =
-  countdown(
-    new Date(),
-    function(ts) {
-      document.getElementById('pageTimer').innerHTML = ts.toHTML("strong");
-    },
-    countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
-
-// later on this timer may be stopped
-window.clearInterval(timerId);
+    var target_date = new Date(2015, 03, 16, 0, 0, 0);
+var current_date = new Date(2015, 03, 21, 0, 0, 0);
+//Create the countdown object
+var count = new Countdown(target_date, current_date);
+//Run the countdown
+count.countdown(function(obj) {
+//Do anything you want with the obj, which contains days, hours, minutes, seconds
+//This will be called every one second as the countdown timer goes
+// console.debug(obj);
+//E.g. you might use jQuery to update the countdown
+$('#days').html(obj.days);
+$('#hours').html(obj.hours);
+$('#minutes').html(obj.minutes);
+$('#seconds').html(obj.seconds);
+//This version will display all numbers with two digits
+//$('#days').html((obj.days < 10 ? '0' : '') + obj.days);
+//$('#hours').html((obj.hours < 10 ? '0' : '') + obj.hours);
+//$('#minutes').html((obj.minutes < 10 ? '0' : '') + obj.minutes);
+//$('#seconds').html((obj.seconds < 10 ? '0' : '') + obj.seconds);
+});
 });
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
