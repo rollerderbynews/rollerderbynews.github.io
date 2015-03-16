@@ -66,9 +66,7 @@ html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" ta
                         <div class="modal-body"> \
                             <h2>'+item.snippet.title+'</h2> \
                             <hr class="star-primary"> \
-
     <div class="row"> \
-
         <div class="col-md-12"> \
             <div class="embed-responsive embed-responsive-16by9" style="margin: 0 auto;text-align:center;"> \
                 <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.snippet.id+'?feature=player_detailpage" \
@@ -76,15 +74,14 @@ html +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" ta
             </div> \
         </div> \
     </div> \
-
-                            <p>'+item.snippet.description+'</p> \                           
+                            <p>'+item.snippet.description+'</p> \
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> \
                         </div> \
                     </div> \
                 </div> \
             </div> \
         </div> \
-    </div>'; 
+    </div>';
          //   html += '<p><a href="http://youtu.be/' + item.id + '">';
  
             // Add the default video thumbnail (default quality)
