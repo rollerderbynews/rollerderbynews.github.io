@@ -114,5 +114,8 @@ $('.modal').on('shown.bs.modal',function(){
 
 jQuery(document).ready(function ($) {
    // dom is ready
-
+   $('.modal').on('shown.bs.modal',function(){
+  //$(this).find('iframe').attr('src','http://www.google.com')
+  console.log('Loading iframe');
+});
 });
