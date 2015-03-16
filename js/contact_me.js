@@ -68,8 +68,8 @@ $(function() {
 jQuery(document).ready(function ($) {
    // dom is ready
    console.log('Countdown');
-    var target_date = new Date(2012, 12, 25, 0, 0, 0);
-var current_date = new Date(2012, 12, 23, 0, 0, 0);
+    var target_date = new Date(2015, 12, 21, 0, 0, 0);
+var current_date = new Date();
 
 //Create the countdown object
 var count = new Countdown(target_date, current_date);
