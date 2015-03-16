@@ -46,7 +46,7 @@ function buildData(response) {
  
             // Include the YouTube Watch URL youtu.be
             html += '<div class="col-sm-4 portfolio-item"> \
-    <a href="#portfolioModal-'+count+'" class="portfolio-link" data-toggle="modal" onclick="javascript:console.log(\'ciao\');"> \
+    <a href="#portfolioModal-'+count+'" class="portfolio-link" data-toggle="modal" onclick="javascript:loadVideo('+item.id.videoId+','+count+');"> \
         <div class="caption"> \
             <div class="caption-content"> \
                 <i class="fa fa-search-plus fa-2x">'+item.snippet.title+'</i> \
@@ -72,7 +72,7 @@ modals +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" 
     <div class="row"> \
         <div class="col-md-12"> \
             <div class="embed-responsive embed-responsive-16by9" style="margin: 0 auto;text-align:center;"> \
-                <iframe allowfullscreen="" src="http://www.youtube.com/embed/'+item.id.videoId+'?feature=player_detailpage" \
+                <iframe id="video-'+count+'" allowfullscreen="" src="" \
                 frameborder="0"></iframe> \
             </div> \
         </div> \
@@ -107,10 +107,9 @@ modals +='<div class="portfolio-modal modal fade" id="portfolioModal-'+count+'" 
       }
 }
 
-$('.modal').on('shown.bs.modal',function(){
-  //$(this).find('iframe').attr('src','http://www.google.com')
-  console.log('Loading iframe');
-});
+var loadVideo = function (videoId,count) {
+   $("#video-"+count).attr('src','http://www.youtube.com/embed/'+videoId+'?feature=player_detailpage')
+}
 
 jQuery(document).ready(function ($) {
    // dom is ready
