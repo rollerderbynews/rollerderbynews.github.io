@@ -68,7 +68,7 @@ $(function() {
 jQuery(document).ready(function ($) {
    // dom is ready
    console.log('Countdown');
-    var target_date = new Date(2015, 12, 21, 0, 0, 0);
+    var target_date = new Date(2015, 03, 21, 0, 0, 0);
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1; //January is 0!
