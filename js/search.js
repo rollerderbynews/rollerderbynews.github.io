@@ -3,7 +3,7 @@
 var nextPageToken = ''
 // Search for a specified string.
 function search() {
-  var q = 'rollerderby%2Bitalia';//$('#query').val();
+  var q = 'rollerderby%26italia';//$('#query').val();
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
