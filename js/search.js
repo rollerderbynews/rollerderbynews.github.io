@@ -8,6 +8,8 @@ function search() {
     q: q,
     part: 'snippet',
     relevanceLanguage: 'ita',
+    location: (41.9,-12.4833333),
+    locationRadius: 1500km,
     maxResults : 50, 
     type: 'video',
     order: 'viewCount',
