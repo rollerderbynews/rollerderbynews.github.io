@@ -8,7 +8,7 @@ function search() {
     q: q,
     part: 'snippet',
     maxResults : 50, 
-    type: 'video',
+   // type: 'video',
     order: 'viewCount',
     //videoDuration: 'long',
     videoEmbeddable: true,
