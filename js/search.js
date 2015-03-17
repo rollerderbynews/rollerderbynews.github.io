@@ -3,12 +3,11 @@
 var nextPageToken = ''
 // Search for a specified string.
 function search() {
-  var q = 'rollerderby';//$('#query').val();
+  var q = 'rollerderby+italy';//$('#query').val();
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
     relevanceLanguage: 'ita',
-    location: '41.9,-12.4833333',
     maxResults : 50, 
     type: 'video',
     order: 'viewCount',
