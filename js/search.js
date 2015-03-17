@@ -7,8 +7,6 @@ function search() {
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
-    location: '41.9,-12.4833333',
-    locationRadius: '1500km',
     maxResults : 50, 
     type: 'video',
     order: 'viewCount',
