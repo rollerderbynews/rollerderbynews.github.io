@@ -7,7 +7,7 @@ function search() {
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
-    maxResults : 50,
+    maxResults : 500,
     type: 'video',
     order: 'viewCount',
     //videoDuration: 'long',
