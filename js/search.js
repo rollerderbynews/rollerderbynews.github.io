@@ -10,9 +10,9 @@ function search() {
     maxResults : 50,
     type: 'video',
     order: 'viewCount',
-    videoDuration: 'any',
+    //videoDuration: 'long',
     videoEmbeddable: true,
-    pageToken: nextPageToken
+   // pageToken: nextPageToken
 
   });
 
