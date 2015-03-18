@@ -118,5 +118,10 @@ var loadVideo = function (videoId,count) {
 
 jQuery(document).ready(function ($) {
    // dom is ready
-
+   $("#searchaction").on({
+    click: function(e) {
+      e.preventDefault();     
+      search($("#queryvideo").val());
+    }
+  });
 });
