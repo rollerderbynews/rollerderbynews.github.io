@@ -2,8 +2,13 @@
 
 var nextPageToken = ''
 // Search for a specified string.
-function search() {
-  var q = 'roller+derby+italia';//$('#query').val();
+function search(query) {
+  var q = '';//$('#query').val();
+  if (query == null||query == "") {
+      q = 'roller+derby+italia';
+  } else {
+      q = query;
+  }
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',
